@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LeftMenuHeaderView" customModule="v2app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="270" height="160"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuAva" translatesAutoresizingMaskIntoConstraints="NO" id="ejF-nS-eBX">
+                    <rect key="frame" x="15" y="24" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="KQg-9y-qev"/>
+                        <constraint firstAttribute="height" constant="60" id="gbL-Bi-VKo"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJu-FK-s2J">
+                    <rect key="frame" x="15" y="98" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tos-pY-u1a">
+                    <rect key="frame" x="15" y="103" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.65098039215686276" green="0.80784313725490198" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.42745098040000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="tos-pY-u1a" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="4VB-SA-rI3"/>
+                <constraint firstItem="hJu-FK-s2J" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="7DC-7T-So7"/>
+                <constraint firstItem="hJu-FK-s2J" firstAttribute="top" secondItem="ejF-nS-eBX" secondAttribute="bottom" constant="14" id="FP5-Wt-tGp"/>
+                <constraint firstItem="tos-pY-u1a" firstAttribute="top" secondItem="hJu-FK-s2J" secondAttribute="bottom" constant="5" id="RZh-5P-RaO"/>
+                <constraint firstItem="ejF-nS-eBX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="24" id="UG4-zt-fVs"/>
+                <constraint firstItem="ejF-nS-eBX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="bw1-E5-ub4"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="bgColorNumber">
+                    <integer key="value" value="0"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="avatarImageView" destination="ejF-nS-eBX" id="CME-NP-5Z7"/>
+                <outlet property="nameLabel" destination="hJu-FK-s2J" id="OA6-5n-gI0"/>
+                <outlet property="phoneLabel" destination="tos-pY-u1a" id="bah-wX-Vaw"/>
+            </connections>
+            <point key="canvasLocation" x="9" y="-388.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="menuAva" width="60" height="60"/>
+    </resources>
+</document>

@@ -1,0 +1,10 @@
+"LeftMenuViewControllerNDV_menuItemDashboard" = "Panel de usario";
+"LeftMenuViewControllerNDV_menuItemCards" = "Mis Tarjetas";
+"LeftMenuViewControllerNDV_menuItemHistory" = "Historial";
+"LeftMenuViewControllerNDV_menuItemHelp" = "Ayuda";
+"LeftMenuViewControllerNDV_menuItemSettings" = "Ajustes";
+"LeftMenuViewControllerNDV_menuItemLogout" = "Desconectar";
+
+"LeftMenuViewControllerNDV_alert_message_signOut" = "¿Quieres desconectar? Sí No";
+"LeftMenuViewControllerNDV_alert_button_signOut_cancel" = "Cancelar";
+"LeftMenuViewControllerNDV_alert_button_signOut_signOut" = "Desconectar";
